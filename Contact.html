@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport"content="width=device-width,initial-scale=1"/>
+  <title>Nikky — Contact</title>
+  <style>
+    :root{--p1:#4a3f91;--p2:#6a5acd;--accent:#ffd54f}
+    *{box-sizing:border-box;margin:0;padding:0;font-family:"Poppins",sans-serif}
+    body{background:linear-gradient(180deg,#fff,#f6f4ff);color:#222}
+    nav{position:sticky;top:0;background:linear-gradient(90deg,var(--p1),var(--p2));padding:1rem;color:#fff;display:flex;justify-content:space-between}
+    main{max-width:900px;margin:2.2rem auto;padding:1rem}
+    .hero{padding:2rem;border-radius:12px;background:linear-gradient(135deg,var(--p2),var(--p1));color:#fff;text-align:center}
+    form{background:#fff;padding:1.2rem;margin-top:1.2rem;border-radius:10px;box-shadow:0 16px 40px rgba(74,63,145,0.06)}
+    .row{display:flex;gap:1rem;flex-wrap:wrap}
+    input,textarea{width:100%;padding:.9rem;border-radius:8px;border:1px solid #e6e6f0;font-size:1rem}
+    button{background:var(--accent);border:none;padding:.9rem 1.2rem;border-radius:10px;font-weight:700;cursor:pointer}
+    .contact-info{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem}
+    .info-card{flex:1;min-width:200px;background:linear-gradient(180deg,rgba(255,255,255,0.98),#fff);padding:1rem;border-radius:10px;box-shadow:0 8px 20px rgba(74,63,145,0.04);text-align:center}
+    .bounce{display:inline-block;transition:transform .18s}
+    .bounce:hover{transform:translateY(-6px)}
+    footer{padding:1.4rem;text-align:center;background:linear-gradient(90deg,var(--p1),var(--p2));color:#fff;margin-top:2rem}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">Nikky</div>
+    <div><a href="index.html" style="color:#fff;text-decoration:none;margin-right:.6rem">Home</a>
+      <a href="services.html" style="color:#fff;text-decoration:none">Services</a></div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h1>Contact Us</h1>
+      <p style="opacity:.95;max-width:760px;margin:0.6rem auto">Have a project, a question, or want to join our workshops? Send us a message — we reply within 48 hours.</p>
+    </section>
+
+    <form onsubmit="event.preventDefault();alert('Thanks! We received your message — we will be in touch.');this.reset();">
+      <div class="row">
+        <div style="flex:1;min-width:200px"><input type="text" placeholder="Your Name" required></div>
+        <div style="flex:1;min-width:200px"><input type="email" placeholder="Your Email" required></div>
+      </div>
+      <div style="margin-top:1rem"><textarea rows="6" placeholder="Your Message" required></textarea></div>
+      <div style="margin-top:1rem;text-align:right"><button type="submit">Send Message</button></div>
+    </form>
+
+    <div class="contact-info">
+      <div class="info-card">
+        <strong>WhatsApp</strong>
+        <div style="margin-top:.5rem"><a class="bounce" href="https://wa.me/2348056113281" target="_blank" style="text-decoration:none;color:var(--p1)">+234 805 611 3281</a></div>
+      </div>
+      <div class="info-card">
+        <strong>Instagram</strong>
+        <div style="margin-top:.5rem"><a class="bounce" href="#" style="text-decoration:none;color:var(--p1)">@nikky.creative</a></div>
+      </div>
+      <div class="info-card">
+        <strong>Location</strong>
+        <div style="margin-top:.5rem;color:#555">Lagos, Nigeria — Remote-friendly</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div><a class="pill" href="https://wa.me/2348056113281" style="background:#ffd54f;padding:.45rem .9rem;border-radius:999px;color:#222;text-decoration:none;font-weight:700">WhatsApp</a></div>
+    <div style="opacity:.9;margin-top:.6rem">© 2025 Nikky Creative Community</div>
+  </footer>
+</body>
+</html>

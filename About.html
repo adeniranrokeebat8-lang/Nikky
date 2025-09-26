@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport"content="width=device-width,initial-scale=1"/>
+  <title>Nikky — About</title>
+  <style>
+    :root{--p1:#4a3f91;--p2:#6a5acd;--accent:#ffd54f}
+    *{box-sizing:border-box;margin:0;padding:0;font-family:"Poppins",sans-serif}
+    body{background:linear-gradient(180deg,#fffafc,#f7f5ff);color:#222}
+    nav{position:sticky;top:0;background:linear-gradient(90deg,var(--p1),var(--p2));padding:1rem 1.25rem;display:flex;justify-content:space-between;align-items:center;color:#fff}
+    nav ul{display:flex;gap:1rem;list-style:none}
+    nav a{color:#fff;text-decoration:none}
+    header{padding:2.5rem 1rem;text-align:center}
+    header h1{color:var(--p1)}
+    .mission{max-width:900px;margin:0 auto;padding:1rem;background:linear-gradient(180deg,rgba(74,63,145,0.04),transparent);border-radius:10px}
+    .team{max-width:1100px;margin:2rem auto;padding:0 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .member{background:#fff;border-radius:12px;padding:1rem;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,0.06);transition:transform .28s}
+    .member img{width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:.8rem;transition:transform .36s,box-shadow .36s}
+    .member:hover{transform:translateY(-8px)}
+    .member:hover img{transform:scale(1.05);box-shadow:0 10px 30px rgba(74,63,145,0.12)}
+    .gallery{max-width:1100px;margin:2rem auto;padding:0 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:10px;transition:transform .36s,box-shadow .36s}
+    .gallery img:hover{transform:translateY(-6px) scale(1.04);box-shadow:0 18px 36px rgba(0,0,0,0.08)}
+    footer{padding:2rem;text-align:center;background:linear-gradient(90deg,var(--p1),var(--p2));color:#fff}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">Nikky</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>About Us</h1>
+    <p style="max-width:900px;margin:0.6rem auto;color:#444">We curate learning paths, studio projects and client work to help creatives build careers. Our mission is simple: make design accessible, collaborative and future-facing.</p>
+  </header>
+
+  <section class="mission">
+    <div style="padding:1rem">
+      <h3 style="color:var(--p2)">Mission & Values</h3>
+      <p>We teach practical craft, encourage experimentation, and deliver work that balances beauty and function. Transparency, mentorship and community are at our core.</p>
+    </div>
+  </section>
+
+  <section style="padding:1rem">
+    <h2 style="text-align:center;color:var(--p1);margin-bottom:.8rem">Meet the Team</h2>
+    <div class="team">
+      <div class="member">
+        <img src="team1.jpg" alt="Team member 1">
+        <strong>Jem O.</strong><div style="opacity:.8">Creative Director</div>
+      </div>
+      <div class="member">
+        <img src="team2.jpg" alt="Team member 2">
+        <strong>Ana R.</strong><div style="opacity:.8">Head Animator</div>
+      </div>
+      <div class="member">
+        <img src="team3.jpg" alt="Team member 3">
+        <strong>Kai M.</strong><div style="opacity:.8">3D Lead</div>
+      </div>
+      <div class="member">
+        <img src="team4.jpg" alt="Team member 4">
+        <strong>Zara L.</strong><div style="opacity:.8">Brand Strategist</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:1rem">
+    <h2 style="text-align:center;color:var(--p1);margin-bottom:.8rem">Studio Snapshots</h2>
+    <div class="gallery">
+      <img src="studio1.jpg" alt="">
+      <img src="studio2.jpg" alt="">
+      <img src="studio3.jpg" alt="">
+      <img src="studio4.jpg" alt="">
+    </div>
+  </section>
+
+  <footer>
+    <div style="margin-bottom:.6rem"><a class="pill" href="https://wa.me/2348056113281" style="background:#ffd54f;padding:.45rem .8rem;border-radius:999px;color:#222;text-decoration:none;font-weight:700">WhatsApp</a></div>
+    <div style="opacity:.9">© 2025 Nikky — crafted with care.</div>
+  </footer>
+</body>
+</html>
